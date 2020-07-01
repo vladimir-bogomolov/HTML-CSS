@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
-#grid-floats .grid-item {
-    min-height: 60vh;
+
+#grid-flex {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
-#grid-floats .grid-item img{
+#grid-floats .grid-item {
+    min-height: 400px;
+}
+
+#grid-flex .grid-item {
+    width: 100%;
+}
+
+.grid-item img{
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 
@@ -21,6 +32,7 @@
         float: left;
         margin: 1%;
     }
+    
     
     #grid-floats li:first-child {
         width: 48%;
@@ -34,6 +46,16 @@
         margin: 1%;
     }
 
+    #grid-flex li:first-child {
+        width: 48%;
+        margin: 1%;
+        
+    }
+    #grid-flex li:nth-child(2) {
+        width: 48%;
+        margin: 1%;
+        
+    }
         
 }
 
