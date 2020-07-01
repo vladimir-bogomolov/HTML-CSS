@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid-floats .grid-item {
+    min-height: 60vh;
+}
+
+#grid-floats .grid-item img{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+@media (min-width: 600px) {
+    #grid-floats li {
+        width: 31.33%;
+        float: left;
+        margin: 1%;
+    }
+    
+    #grid-floats li:first-child {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+
+    #grid-floats li:nth-child(2) {
+        width: 48%;
+        float: right;
+        margin: 1%;
+    }
+
+        
+}
+
+@media (min-width: 1024px) {
+    #grid-floats li {
+        width: 23%;
+       
+    }
+}
+
