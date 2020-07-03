@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: 'Raleway';
-    src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v16/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format('woff2');
-} */
-
 @font-face {
     font-family: 'Raleway';
     src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v16/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format('woff2');
@@ -20,7 +15,9 @@
     
 }
 
-
+p {
+    text-align: center;
+}
 
 ul {
     list-style: none;
@@ -40,7 +37,7 @@ p[dir="rtl"] {
 
 li:hover {
     background-color: rgb(205, 214, 211);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 #grid-flex {
@@ -49,15 +46,15 @@ li:hover {
     flex-wrap: wrap;
 }
 
-/* For display sizes I had 2 columns except 3 because the height of <p>
-Here I try to solve this via min-height property */
-#grid-floats .grid-item {
-    min-height: 450px;
+/* For some display sizes I had 2 columns except 3 because the height of <p>-elements is different.
+Here I try to solve this by min-height property */
+#grid-floats li {
+    min-height: 550px;
+    
 }
 
 .grid-item img {
-    width: 90%;
-    /* margin: 0 auto; */
+    width: 100%;
 }
 
 
@@ -72,9 +69,10 @@ Here I try to solve this via min-height property */
         float: left;
         
     }
-    
+
     li:first-child, li:nth-child(2) {
         width: 48%;
+        
     }
 
         
